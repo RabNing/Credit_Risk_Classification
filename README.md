@@ -1,7 +1,13 @@
-## Credit Risk Analysis Report
+# Credit Risk Analysis Report
 
-# Provide an overview that explains the purpose of this analysis
+## Provide an overview that explains the purpose of this analysis
+The purpose of this analysis is to build and evaluate a logistic regression model using historical lending data from a peer-to-peer lending services company. The dataset contains information about loans, including whether they are "healthy loans" (0) or "high-risk loans" (1). By training the model on a split dataset, the aim is to accurately predict loan risk, enabling the company to identify creditworthy borrowers and reduce potential risks associated with loan defaults. The analysis involves creating the model, making predictions, generating a confusion matrix, and producing a classification report to assess the model's performance in predicting both "healthy loan" and "high-risk loan" labels.
+## Describe the accuracy, precision, and recall scores of the machine-learning model
+Accuracy: It measures the overall correctness of the model's predictions. The model achieves an accuracy of 99%, indicating that 99% of the predictions are correct.
 
-# Describe the accuracy, precision, and recall scores of the machine-learning model
+Precision: It measures the model's ability to correctly identify true positive cases among the predicted positive cases. For the "healthy loan" class, the precision is 1.00, indicating that almost all instances predicted as "healthy loans" are genuinely healthy loans. For the "high-risk loan" class, the precision is 0.85, meaning that about 85% of the instances predicted as "high-risk loans" are indeed high-risk loans.
 
-# Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company
+Recall: It measures the model's ability to capture true positive cases among all actual positive cases. For the "healthy loan" class, the recall is 0.99, indicating that the model identifies 99% of the actual healthy loans. For the "high-risk loan" class, the recall is 0.91, indicating that the model captures 91% of the actual high-risk loans.
+
+## Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company
+The logistic regression machine learning model achieved impressive results with high accuracy (99%), indicating its ability to make correct predictions for the majority of cases. The model's balanced performance across both classes, along with its high accuracy, makes it a valuable tool for the company's loan evaluation process. Its ability to accurately identify healthy loans and effectively capture high-risk loans suggests that it can help mitigate potential financial risks and make more informed lending decisions. However, it's essential to ensure that the model's performance is consistent over time and that it is evaluated on new data regularly to maintain its reliability.
